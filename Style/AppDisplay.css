@@ -1,0 +1,54 @@
+.AppDisplay {
+    display: inline-flex;
+    position: relative;
+    margin: 10vh 0 10vh 0;
+    align-items: center;
+}
+
+.laterais {
+    font-size: 1.4vw;
+}
+
+/*----------------------------------------------------*/
+/*
+imagens
+*/
+
+.imgMeio {
+    width: 15vw;
+}
+.imgEsq, .imgDir {
+    display: flex;
+    width: 10vw;
+    filter: drop-shadow(0 0.5vw 20px rgb(0, 0, 0, 0.7));
+}
+
+/*----------------------------------------------------*/
+/*
+Esquerda
+*/
+
+.TempEsq, .TempDir {
+    position: absolute;
+    bottom: 10vh;
+    transition: transform 0.5s ease;
+}
+
+.TempEsq {
+    right: 23vw;
+}
+.TempEsq:focus {
+    transform: scale(1.5, 1.5) translateX(13.67vw) translateY(-0.7vh);
+}
+
+
+/*----------------------------------------------------*/
+/*
+Direita
+*/
+.TempDir { left: 23vw; }
+
+.TempDir:focus {
+    transform: scale(1.5, 1.5);
+}
+

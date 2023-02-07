@@ -1,0 +1,30 @@
+.TextoSec {
+    display: inline-flex;
+    width: 75%;
+    margin: 7vh 0 8vh 0;
+    padding: 1vw 1vw;
+    border-radius: 1vw;
+    box-shadow: 0 0.5vw 1.5vw 1vw rgba(0, 0, 0, 0.4);
+}
+
+.TextoDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vw 0.5vw 1vw;
+}
+.TextoDiv h2 {
+    font-size: 2.4vw;
+    font-weight: 600;
+}
+.TextoDiv p {
+    font-size: 1.8vw;
+    color: #cccccc;
+}
+
+.componentImg {
+    display: flex;
+    height: 50vh;
+    align-self: center;
+
+    border-radius: 1vw;
+}
