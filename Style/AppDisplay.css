@@ -1,7 +1,7 @@
 .AppDisplay {
     display: inline-flex;
     position: relative;
-    margin: 10vh 0 10vh 0;
+    margin: 12vh 0 10vh 0;
     align-items: center;
 }
 
@@ -10,9 +10,7 @@
 }
 
 /*----------------------------------------------------*/
-/*
-imagens
-*/
+/*  imagens  */
 
 .imgMeio {
     width: 15vw;
@@ -20,35 +18,58 @@ imagens
 .imgEsq, .imgDir {
     display: flex;
     width: 10vw;
-    filter: drop-shadow(0 0.5vw 20px rgb(0, 0, 0, 0.7));
 }
 
 /*----------------------------------------------------*/
-/*
-Esquerda
-*/
+/*  Meio  */
+
+.TempMeio {
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 0.5vw 20px rgb(0, 0, 0, 0.7));
+}
+.TempMeio:hover { transform: scale(1.3, 1.3);}
+
+/*----------------------------------------------------*/
+/*  Laterais  */
 
 .TempEsq, .TempDir {
     position: absolute;
     bottom: 10vh;
     transition: transform 0.5s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 0.5vw 20px rgb(0, 0, 0, 0.7));
+}
+.TempEsq:hover, .TempDir:hover {
+    transform: scale(1.1, 1.1);
 }
 
-.TempEsq {
-    right: 23vw;
-}
-.TempEsq:focus {
-    transform: scale(1.5, 1.5) translateX(13.67vw) translateY(-0.7vh);
-}
+/*----------------------------------------------------*/
+/*  Esquerda  */
+
+.TempEsq { right: 23vw; }
 
 
 /*----------------------------------------------------*/
-/*
-Direita
-*/
+/*  Direita  */
 .TempDir { left: 23vw; }
 
-.TempDir:focus {
-    transform: scale(1.5, 1.5);
+/*----------------------------------------------------*/
+/*  Imagens de Download  */
+
+.Download {
+    display: inline-flex;
+    width: 30%;
+    margin: 3vh 0 15vh 0;
+
+    align-items: center;
+    justify-content: space-between;
 }
 
+.playStore {
+    display: flex;
+    height: 10vh;
+}
+.appStore {
+    display: flex;
+    height: 8.6vh;
+}

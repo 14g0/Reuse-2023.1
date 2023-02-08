@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="./Style/AppDisplay.css">
     <link rel="stylesheet" href="./Style/TextoSec.css">
     <link rel="stylesheet" href="./Style/Scrollbar.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
-    </style>
 
-    <script src="./JS/PlaceAnimation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="./JS/PlaceAnimation.js"></script>
+    <script type="text/javascript" src="./JS/TemplateAnimation.js"></script>
 </head>
 
 <body>
@@ -38,10 +40,15 @@
         </div>
     </nav>
 
-    <h1>Economize, preserve o ambiente e adquira seus eletrônicos tão desejados !!!</h1>
+    <Header>
+        <h1>Compre, use,</h1>
+        <img src="./Images/Reus-e (1) 2.png" alt="">
+    </Header>
+
+    <img src="./Images/Reus-e (1) 1.png" alt="">
 
     <div class="AppDisplay" onfocus="">
-        <button id="Esq" class="TempEsq">
+        <button onclick="TemplateE()" id="Esq" class="TempEsq">
             <h2 class="laterais">Home</h2>
             <img class="imgEsq" src="./Images/Home.png" alt="">
         </button>
@@ -51,10 +58,15 @@
             <img class="imgMeio" src="./Images/Login.png" alt="">
         </button>
 
-        <button id="Dir" class="TempDir">
+        <button onclick="TemplateD()" id="Dir" class="TempDir">
             <h2 class="laterais">Produto</h2>
             <img class="imgDir" src="./Images/Produto.png" alt="">
         </button>
+    </div>
+
+    <div class="Download">
+        <img class="playStore" src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png" alt="">
+        <img class="appStore" src="https://www.gov.br/pt-br/imagens-de-servicos/apple.png" alt="">
     </div>
 
     <section class="TextoSec">
@@ -76,15 +88,15 @@
     <section class="TextoSec">
         <img class="componentImg" src="https://images.unsplash.com/photo-1611735341450-74d61e660ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="Foto mostra uma floresta de pinheiros, em cima de um plano composto pelo céu neblinoso">
         <div class="TextoDiv">
-            <h2>Objetivo</h2>
+            <h2 style="align-self: flex-end;">Conquistas</h2>
             <p> 
-                Fundado em 2014, o Reus-e foi pioneiro na comunição e conscientização
-                acerca de um dos piores males que acompanharam o capitalismo junto
-                a sua produção em massa, a obsolescência programada.<br>
-                Desde a sua idealização, o principal objetivo do Reus-e sempre foi
-                tentar reduzir a emissão de poluentes derivados de peças e componentes
-                eletrônicos sem que os produtos fossem colocados em desuso, ou retirados
-                de circulação, após sua utilização.
+                O ativismo, a coragem e a esperança de transformar a realidade são
+                princípios que orientam nossas campanhas e a forma como atuamos.
+                Enquanto muitos olham para as florestas e outros ambientes naturais
+                somente como fonte de lucro, temos compromisso com a proteção do planeta
+                por meio da conscientização coletiva e ações efetivas. Pressionamos todos
+                os setores eatuamos junto a eles para defender os ecossistemas. O que 
+                importa não são palavras, mas ações.
             </p>
         </div>
     </section>

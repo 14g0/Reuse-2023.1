@@ -4,6 +4,7 @@
     margin: 7vh 0 8vh 0;
     padding: 1vw 1vw;
     border-radius: 1vw;
+    background-color: #f0f0f0;
     box-shadow: 0 0.5vw 1.5vw 1vw rgba(0, 0, 0, 0.4);
 }
 
@@ -15,15 +16,17 @@
 .TextoDiv h2 {
     font-size: 2.4vw;
     font-weight: 600;
+    color: #13e000;
 }
 .TextoDiv p {
+    font-family: 'Barlow';
     font-size: 1.8vw;
-    color: #cccccc;
+    color: black;
 }
 
 .componentImg {
     display: flex;
-    height: 50vh;
+    height: 20vw;
     align-self: center;
 
     border-radius: 1vw;

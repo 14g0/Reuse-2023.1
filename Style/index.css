@@ -1,6 +1,7 @@
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-family: 'Barlow', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
 
     align-items: center;
 
@@ -21,11 +22,25 @@ body {
     overflow: overlay;
 }
 
-h1 {
-    width: 70%;
-    margin: 10vh 0 0 0;
+body > img {
+    height: 15vw;
+}
 
-    font-size: 3.5vw;
+header {
+    display: inline-flex;
+    margin: 5vh 0 0 0;
+    align-items: center;
+}
+header img {
+    height: 7vw;
+    margin: 0 0 1vw 2vw;
+    filter: drop-shadow(0 1.5vw 8px rgb(0, 0, 0));
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 6vw;
+    font-weight: 200;
     text-align: center;
 
     border: none;
@@ -34,6 +49,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Barlow';
     font-size: 2vw;
     margin: 0 0 1vh 0;
     font-weight: 400;
@@ -41,6 +57,7 @@ h2 {
 }
 
 button {
+    font-family: 'Barlow';
     display: flex;
     flex-direction: column;
     align-items: center;

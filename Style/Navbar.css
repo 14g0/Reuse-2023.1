@@ -35,6 +35,7 @@
 
     margin: 0 0 0 1vw;
 
+    font-family: 'Barlow';  
     font-size: 1.3vw;
     font-weight: 500;
 
@@ -63,6 +64,8 @@
 .Item {
     padding: 0.5vw;
     border-radius: 0.4vw;
+
+    font-family: 'Barlow';
 
     color: #0b3700;
 }
